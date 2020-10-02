@@ -1,6 +1,6 @@
-@extends('coronas.layout')
+@extends('aluno.layout')
 
-@section('title',__('Corona (CRUD Laravel) - i9W3b'))
+@section('title',__('Acad'))
 
 @push('css')
 <style>
@@ -15,8 +15,8 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between w-100">
-                        <span>@lang('Corona (CRUD Laravel) - i9W3b')</span>
-                        <a href="{{ url('coronas/create') }}" class="btn-primary btn-sm">
+                        <span>@lang('Alunos')</span>
+                        <a href="{{ url('aluno/create') }}" class="btn-primary btn-sm">
                             <i class="fa fa-plus"></i> @lang('Criar Novo')
                         </a>
                     </div>
@@ -32,9 +32,8 @@
                         <thead>
                             <tr>
                                 <td>ID</td>
-                                <td>@lang('Nome do País')</td>
-                                <td>@lang('Total de Casos')</td>
-                                <td>@lang('Total de Mortes')</td>
+                                <td>Nome</td>
+                                <td>Curso</td>
                                 <td colspan="3" class="text-center">@lang('Ações')</td>
                             </tr>
                         </thead>
@@ -43,18 +42,19 @@
                             <tr>
                                 <td>{{$aluno->id}}</td>
                                 <td>{{$aluno->nome}}</td>
+                                <td>{{$aluno->curso}}</td>
                                 <td class="text-center p-0 align-middle" width="70">
-                                    <a href="{{ route('coronas.show', $case->id)}}"
+                                    <a href="{{ route('aluno.show', $aluno->id)}}"
                                         class="btn btn-info btn-sm">@lang('Abrir')
                                     </a>
                                 </td>
                                 <td class="text-center p-0 align-middle" width="70">
-                                    <a href="{{ route('coronas.edit', $case->id)}}"
+                                    <a href="{{ route('aluno.edit', $aluno->id)}}"
                                         class="btn btn-primary btn-sm">@lang('Editar')
                                     </a>
                                 </td>
                                 <td class="text-center p-0 align-middle" width="70">
-                                    <form action="{{ route('coronas.destroy', $case->id)}}" method="post">
+                                    <form action="{{ route('aluno.destroy', $aluno->id)}}" method="post">
                                         @csrf
                                         @method('DELETE')
                                         <button class="btn btn-danger btn-sm" type="submit">Delete</button>

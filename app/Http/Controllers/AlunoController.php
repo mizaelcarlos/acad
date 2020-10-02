@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Models\Aluno;
 use App\Models\Curso;
 
@@ -16,7 +17,11 @@ class AlunoController extends Controller
     public function index()
     {
         //
-        $alunos = Aluno::all();
+        $alunos = DB::table('alunos')
+            ->join('aluno_curso', 'alunos.id', '=', 'aluno_curso.aluno_id')
+            ->join('cursos', 'cursos.id', '=', 'aluno_curso.curso_id')
+            ->select('alunos.nome', 'alunos.id','cursos.nome as curso')
+            ->get();
 
         return view('aluno.index',compact('alunos'));
     }
