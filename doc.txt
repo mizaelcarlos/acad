@@ -101,3 +101,6 @@ insert into cursos (nome,carga_horaria) values ('Data Science',360);
 insert into cursos (nome,carga_horaria) values ('Direito Penal',80);
 insert into aluno_curso (aluno_id,curso_id) values (1,1);
 insert into aluno_curso (aluno_id,curso_id) values (1,2);
+
+
+php artisan make:controller AlunoController -r
