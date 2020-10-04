@@ -37,7 +37,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Carga horária:</strong>
-                <input type="text" name="carga_horaria" id="carga_horaria" value="{{ $curso->carga_horaria }}" class="form-control" placeholder="Carga Horária">
+                <input type="text" name="carga_horaria" id="carga_horaria" value="{{ $curso->carga_horaria }}" class="form-control" placeholder="Carga Horária somente números">
             </div>
         </div>
         </div>

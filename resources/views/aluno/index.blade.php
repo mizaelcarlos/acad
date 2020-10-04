@@ -6,9 +6,6 @@
             <div class="pull-left">
                 <h2>Lista de alunos</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('aluno.create') }}"> Cadastrar</a>
-            </div>
         </div>
     </div>
    
@@ -48,6 +45,10 @@
         </tr>
         @endforeach
     </table>
+
+    <div class="pull-left">
+        <a class="btn btn-success" href="{{ route('aluno.create') }}"> Cadastrar</a>
+    </div>
   
       
 @endsection
