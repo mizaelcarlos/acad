@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.14.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificado_acad" printOrder="Horizontal" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8593e863-5df5-4277-bfd8-5e610cce90b6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="PostgreeSQL.xml"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[ select a.nome as nome , c.nome as curso, c.carga_horaria from alunos as a
+ join aluno_curso as ac on a.id = ac.aluno_id
+ join cursos c on c.id = ac.curso_id 
+ where a.id = 34]]>
+	</queryString>
+	<field name="nome" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nome"/>
+		<property name="com.jaspersoft.studio.field.label" value="nome"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alunos"/>
+	</field>
+	<field name="curso" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="curso"/>
+		<property name="com.jaspersoft.studio.field.label" value="curso"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="cursos"/>
+	</field>
+	<field name="carga_horaria" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="carga_horaria"/>
+		<property name="com.jaspersoft.studio.field.label" value="carga_horaria"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="cursos"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="295" y="10" width="180" height="50" uuid="4e6d8a11-6b5a-4faa-8fc1-efc860a1ab73"/>
+				<textElement>
+					<font fontName="Albertus Extra Bold" size="26"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Certificado"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="341" splitType="Stretch">
+			<textField>
+				<reportElement x="70" y="10" width="210" height="30" uuid="f384d9f1-6730-4b81-a539-3b6ab99d7680"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Certificamos que o aluno : "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="50" width="360" height="30" uuid="2e630e89-5161-4843-a6ac-30ad050c71be"/>
+				<textElement>
+					<font fontName="Albertus Extra Bold" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="100" width="200" height="30" uuid="e178d6b3-9885-4596-a910-37886f307e0b"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA["concluiu o curso de "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="100" width="300" height="30" uuid="0007fa23-a70a-4085-a39d-e302bee3e114"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{curso}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="140" width="190" height="30" uuid="ed2c9ea7-4252-4bbd-ac22-acedf555ce6b"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA["com a cara horária de "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="140" width="100" height="30" uuid="fdb940b3-6e6a-4c03-9e34-0facf7b44d65"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{carga_horaria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="140" width="190" height="30" uuid="adb89950-980f-4e26-b34c-f9743d1a4206"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Horas"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="500" y="10" width="299" height="276" uuid="b09586fd-fcb9-44f9-bf24-f6015f7328a2"/>
+				<imageExpression><![CDATA["C:/wamp64/www/acad/public/imagens/moldura_certificado.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="100" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

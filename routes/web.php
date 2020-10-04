@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::resource('aluno', 'AlunoController');
 Route::resource('curso', 'CursoController');
+Route::get('certificado/emitir/{aluno_id}', 'CertificadoController@Emitir')->name('emitir');

@@ -108,6 +108,49 @@
         ]
     },
     {
+        "name": "cossou/jasperphp",
+        "version": "2.8.0",
+        "version_normalized": "2.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cossou/JasperPHP.git",
+            "reference": "d24bc69aaaf55beb2a76a0db2a572e81f6baee09"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cossou/JasperPHP/zipball/d24bc69aaaf55beb2a76a0db2a572e81f6baee09",
+            "reference": "d24bc69aaaf55beb2a76a0db2a572e81f6baee09",
+            "shasum": ""
+        },
+        "time": "2018-11-16T11:45:31+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "JasperPHP": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Hélder Duarte",
+                "email": "cossou@gmail.com"
+            }
+        ],
+        "description": "Create Reports in PHP with JasperReports",
+        "homepage": "https://github.com/cossou/JasperPHP",
+        "keywords": [
+            "jasper",
+            "jasperreports",
+            "java",
+            "pdf",
+            "reports"
+        ]
+    },
+    {
         "name": "dnoegel/php-xdg-base-dir",
         "version": "v0.1.1",
         "version_normalized": "0.1.1.0",
@@ -936,6 +979,54 @@
         ]
     },
     {
+        "name": "geekcom/phpjasper-laravel",
+        "version": "v1.1",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPJasper/phpjasper-laravel.git",
+            "reference": "f15078b15d1373636d324118396fa8b16163ad9d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHPJasper/phpjasper-laravel/zipball/f15078b15d1373636d324118396fa8b16163ad9d",
+            "reference": "f15078b15d1373636d324118396fa8b16163ad9d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^6.1",
+            "squizlabs/php_codesniffer": "^3.1"
+        },
+        "time": "2018-03-05T16:16:36+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PHPJasper\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Daniel Rodrigues Lima",
+                "email": "danielrodrigues-ti@hotmail.com",
+                "role": "lead"
+            }
+        ],
+        "description": "A PHP report generator",
+        "keywords": [
+            "pdf",
+            "php-reports",
+            "reports"
+        ]
+    },
+    {
         "name": "graham-campbell/result-type",
         "version": "v1.0.1",
         "version_normalized": "1.0.1.0",
@@ -1276,17 +1367,17 @@
     },
     {
         "name": "laravel/framework",
-        "version": "v8.7.1",
-        "version_normalized": "8.7.1.0",
+        "version": "v8.8.0",
+        "version_normalized": "8.8.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/framework.git",
-            "reference": "3fb29e904a152b3e1fe49581f66ba5e02fe991f2"
+            "reference": "0bdd5c6f12cb7cb6644e484169656245af417735"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/framework/zipball/3fb29e904a152b3e1fe49581f66ba5e02fe991f2",
-            "reference": "3fb29e904a152b3e1fe49581f66ba5e02fe991f2",
+            "url": "https://api.github.com/repos/laravel/framework/zipball/0bdd5c6f12cb7cb6644e484169656245af417735",
+            "reference": "0bdd5c6f12cb7cb6644e484169656245af417735",
             "shasum": ""
         },
         "require": {
@@ -1399,7 +1490,7 @@
             "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0).",
             "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
         },
-        "time": "2020-09-29T15:39:07+00:00",
+        "time": "2020-10-02T14:33:08+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3818,17 +3909,17 @@
     },
     {
         "name": "sebastian/code-unit",
-        "version": "1.0.6",
-        "version_normalized": "1.0.6.0",
+        "version": "1.0.7",
+        "version_normalized": "1.0.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/code-unit.git",
-            "reference": "d3a241b6028ff9d8e97d2b6ebd4090d01f92fad8"
+            "reference": "59236be62b1bb9919e6d7f60b0b832dc05cef9ab"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/code-unit/zipball/d3a241b6028ff9d8e97d2b6ebd4090d01f92fad8",
-            "reference": "d3a241b6028ff9d8e97d2b6ebd4090d01f92fad8",
+            "url": "https://api.github.com/repos/sebastianbergmann/code-unit/zipball/59236be62b1bb9919e6d7f60b0b832dc05cef9ab",
+            "reference": "59236be62b1bb9919e6d7f60b0b832dc05cef9ab",
             "shasum": ""
         },
         "require": {
@@ -3837,7 +3928,7 @@
         "require-dev": {
             "phpunit/phpunit": "^9.3"
         },
-        "time": "2020-09-28T05:28:46+00:00",
+        "time": "2020-10-02T14:47:54+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4760,8 +4851,8 @@
     },
     {
         "name": "symfony/console",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/console.git",
@@ -4855,8 +4946,8 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
@@ -4990,17 +5081,17 @@
     },
     {
         "name": "symfony/error-handler",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/error-handler.git",
-            "reference": "d2f1d4996d5499f1261164d10080e4120001f041"
+            "reference": "5e4d8ef8d71822922d1eebd130219ae3491a5ca9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/error-handler/zipball/d2f1d4996d5499f1261164d10080e4120001f041",
-            "reference": "d2f1d4996d5499f1261164d10080e4120001f041",
+            "url": "https://api.github.com/repos/symfony/error-handler/zipball/5e4d8ef8d71822922d1eebd130219ae3491a5ca9",
+            "reference": "5e4d8ef8d71822922d1eebd130219ae3491a5ca9",
             "shasum": ""
         },
         "require": {
@@ -5014,7 +5105,7 @@
             "symfony/http-kernel": "^4.4|^5.0",
             "symfony/serializer": "^4.4|^5.0"
         },
-        "time": "2020-09-27T03:44:28+00:00",
+        "time": "2020-10-02T08:49:02+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5063,8 +5154,8 @@
     },
     {
         "name": "symfony/event-dispatcher",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/event-dispatcher.git",
@@ -5230,8 +5321,8 @@
     },
     {
         "name": "symfony/finder",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/finder.git",
@@ -5372,17 +5463,17 @@
     },
     {
         "name": "symfony/http-foundation",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/http-foundation.git",
-            "reference": "6cca6b2e4b69fc5bace160d14cf1ee5f71483db4"
+            "reference": "353b42e7b4fd1c898aab09a059466c9cea74039b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/6cca6b2e4b69fc5bace160d14cf1ee5f71483db4",
-            "reference": "6cca6b2e4b69fc5bace160d14cf1ee5f71483db4",
+            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/353b42e7b4fd1c898aab09a059466c9cea74039b",
+            "reference": "353b42e7b4fd1c898aab09a059466c9cea74039b",
             "shasum": ""
         },
         "require": {
@@ -5400,7 +5491,7 @@
         "suggest": {
             "symfony/mime": "To use the file extension guesser"
         },
-        "time": "2020-09-13T05:01:27+00:00",
+        "time": "2020-09-27T14:14:57+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5449,17 +5540,17 @@
     },
     {
         "name": "symfony/http-kernel",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/http-kernel.git",
-            "reference": "17227644c3c66dcf32bdfeceff4364d090cd6756"
+            "reference": "1764b87d2f10d5c9ce6e4850fe27934116d89708"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/http-kernel/zipball/17227644c3c66dcf32bdfeceff4364d090cd6756",
-            "reference": "17227644c3c66dcf32bdfeceff4364d090cd6756",
+            "url": "https://api.github.com/repos/symfony/http-kernel/zipball/1764b87d2f10d5c9ce6e4850fe27934116d89708",
+            "reference": "1764b87d2f10d5c9ce6e4850fe27934116d89708",
             "shasum": ""
         },
         "require": {
@@ -5516,7 +5607,7 @@
             "symfony/console": "",
             "symfony/dependency-injection": ""
         },
-        "time": "2020-09-27T04:33:19+00:00",
+        "time": "2020-10-04T07:57:28+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5565,8 +5656,8 @@
     },
     {
         "name": "symfony/mime",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/mime.git",
@@ -6444,8 +6535,8 @@
     },
     {
         "name": "symfony/process",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/process.git",
@@ -6510,17 +6601,17 @@
     },
     {
         "name": "symfony/routing",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/routing.git",
-            "reference": "d36e06eb02a55522a8eed070c1cbc3dc3c389876"
+            "reference": "720348c2ae011f8c56964c0fc3e992840cb60ccf"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/routing/zipball/d36e06eb02a55522a8eed070c1cbc3dc3c389876",
-            "reference": "d36e06eb02a55522a8eed070c1cbc3dc3c389876",
+            "url": "https://api.github.com/repos/symfony/routing/zipball/720348c2ae011f8c56964c0fc3e992840cb60ccf",
+            "reference": "720348c2ae011f8c56964c0fc3e992840cb60ccf",
             "shasum": ""
         },
         "require": {
@@ -6549,7 +6640,7 @@
             "symfony/http-foundation": "For using a Symfony Request object",
             "symfony/yaml": "For using the YAML loader"
         },
-        "time": "2020-09-02T16:23:27+00:00",
+        "time": "2020-10-02T13:05:43+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -6682,8 +6773,8 @@
     },
     {
         "name": "symfony/string",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/string.git",
@@ -6769,8 +6860,8 @@
     },
     {
         "name": "symfony/translation",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/translation.git",
@@ -6940,8 +7031,8 @@
     },
     {
         "name": "symfony/var-dumper",
-        "version": "v5.1.6",
-        "version_normalized": "5.1.6.0",
+        "version": "v5.1.7",
+        "version_normalized": "5.1.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-dumper.git",

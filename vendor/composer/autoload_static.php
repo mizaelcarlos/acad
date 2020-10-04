@@ -109,6 +109,7 @@ class ComposerStaticInit996f2416370f654f64948403cc614b35
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
+            'PHPJasper\\' => 10,
         ),
         'O' => 
         array (
@@ -367,6 +368,10 @@ class ComposerStaticInit996f2416370f654f64948403cc614b35
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
+        'PHPJasper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/geekcom/phpjasper-laravel/src',
+        ),
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
@@ -506,6 +511,13 @@ class ComposerStaticInit996f2416370f654f64948403cc614b35
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
         ),
+        'J' => 
+        array (
+            'JasperPHP' => 
+            array (
+                0 => __DIR__ . '/..' . '/cossou/jasperphp/src',
+            ),
+        ),
         'H' => 
         array (
             'Highlight\\' => 
@@ -522,7 +534,10 @@ class ComposerStaticInit996f2416370f654f64948403cc614b35
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AlunoController' => __DIR__ . '/../..' . '/app/Http/Controllers/AlunoController.php',
+        'App\\Http\\Controllers\\CertificadoController' => __DIR__ . '/../..' . '/app/Http/Controllers/CertificadoController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\CursoController' => __DIR__ . '/../..' . '/app/Http/Controllers/CursoController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -1706,6 +1721,7 @@ class ComposerStaticInit996f2416370f654f64948403cc614b35
         'Illuminate\\Console\\Scheduling\\Schedule' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/Schedule.php',
         'Illuminate\\Console\\Scheduling\\ScheduleFinishCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleFinishCommand.php',
         'Illuminate\\Console\\Scheduling\\ScheduleRunCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleRunCommand.php',
+        'Illuminate\\Console\\Scheduling\\ScheduleWorkCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleWorkCommand.php',
         'Illuminate\\Console\\Scheduling\\SchedulingMutex' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/SchedulingMutex.php',
         'Illuminate\\Container\\BoundMethod' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Container/BoundMethod.php',
         'Illuminate\\Container\\Container' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Container/Container.php',
@@ -2443,6 +2459,7 @@ class ComposerStaticInit996f2416370f654f64948403cc614b35
         'Illuminate\\Validation\\ValidationServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Validation/ValidationServiceProvider.php',
         'Illuminate\\Validation\\Validator' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Validation/Validator.php',
         'Illuminate\\View\\AnonymousComponent' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/AnonymousComponent.php',
+        'Illuminate\\View\\AppendableAttributeValue' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/AppendableAttributeValue.php',
         'Illuminate\\View\\Compilers\\BladeCompiler' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php',
         'Illuminate\\View\\Compilers\\Compiler' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/Compilers/Compiler.php',
         'Illuminate\\View\\Compilers\\CompilerInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/Compilers/CompilerInterface.php',
@@ -2484,6 +2501,9 @@ class ComposerStaticInit996f2416370f654f64948403cc614b35
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'JasperPHP\\Facades\\JasperPHP' => __DIR__ . '/..' . '/cossou/jasperphp/src/JasperPHP/Facades/JasperPHP.php',
+        'JasperPHP\\JasperPHP' => __DIR__ . '/..' . '/cossou/jasperphp/src/JasperPHP/JasperPHP.php',
+        'JasperPHP\\JasperPHPServiceProvider' => __DIR__ . '/..' . '/cossou/jasperphp/src/JasperPHP/JasperPHPServiceProvider.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
@@ -2993,6 +3013,13 @@ class ComposerStaticInit996f2416370f654f64948403cc614b35
         'Opis\\Closure\\SecurityProvider' => __DIR__ . '/..' . '/opis/closure/src/SecurityProvider.php',
         'Opis\\Closure\\SelfReference' => __DIR__ . '/..' . '/opis/closure/src/SelfReference.php',
         'Opis\\Closure\\SerializableClosure' => __DIR__ . '/..' . '/opis/closure/src/SerializableClosure.php',
+        'PHPJasper\\Exception\\ErrorCommandExecutable' => __DIR__ . '/..' . '/geekcom/phpjasper-laravel/src/Exception/ErrorCommandExecutable.php',
+        'PHPJasper\\Exception\\InvalidCommandExecutable' => __DIR__ . '/..' . '/geekcom/phpjasper-laravel/src/Exception/InvalidCommandExecutable.php',
+        'PHPJasper\\Exception\\InvalidFormat' => __DIR__ . '/..' . '/geekcom/phpjasper-laravel/src/Exception/InvalidFormat.php',
+        'PHPJasper\\Exception\\InvalidInputFile' => __DIR__ . '/..' . '/geekcom/phpjasper-laravel/src/Exception/InvalidInputFile.php',
+        'PHPJasper\\Exception\\InvalidResourceDirectory' => __DIR__ . '/..' . '/geekcom/phpjasper-laravel/src/Exception/InvalidResourceDirectory.php',
+        'PHPJasper\\PHPJasper' => __DIR__ . '/..' . '/geekcom/phpjasper-laravel/src/PHPJasper.php',
+        'PHPJasper\\PHPJasperServiceProvider' => __DIR__ . '/..' . '/geekcom/phpjasper-laravel/src/PHPJasperServiceProvider.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',

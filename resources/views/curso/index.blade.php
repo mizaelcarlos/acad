@@ -22,8 +22,8 @@
         <tr>
             <th>Id</th>
             <th>Nome</th>
-            <th>Carga Horária<th>
-            <th width="280px">Opções</th>
+            <th>Carga Horária</th>
+            <th>Opções</th>
         </tr>
         @foreach ($cursos as $curso)
         <tr>
