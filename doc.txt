@@ -104,3 +104,4 @@ insert into aluno_curso (aluno_id,curso_id) values (1,2);
 
 
 php artisan make:controller AlunoController -r
+php artisan make:controller CursoController -r

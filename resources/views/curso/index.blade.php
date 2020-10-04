@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Lista de alunos</h2>
+                <h2>Lista de cursos</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('aluno.create') }}"> Cadastrar</a>
+                <a class="btn btn-success" href="{{ route('curso.create') }}"> Cadastrar</a>
             </div>
         </div>
     </div>
@@ -22,20 +22,20 @@
         <tr>
             <th>Id</th>
             <th>Nome</th>
-            <th>Curso</th>
+            <th>Carga Horária<th>
             <th width="280px">Opções</th>
         </tr>
-        @foreach ($alunos as $aluno)
+        @foreach ($cursos as $curso)
         <tr>
-            <td>{{ $aluno->id }}</td>
-            <td>{{ $aluno->nome }}</td>
-            <td>{{ $aluno->curso }}</td>
+            <td>{{ $curso->id }}</td>
+            <td>{{ $curso->nome }}</td>
+            <td>{{ $curso->carga_horaria }}</td>
             <td>
-                <form action="{{ route('aluno.destroy',$aluno->id) }}" method="POST">
+                <form action="{{ route('curso.destroy',$curso->id) }}" method="POST">
    
-                    <a class="btn btn-info" href="{{ route('aluno.show',$aluno->id) }}">Visualizar</a>
+                    <a class="btn btn-info" href="{{ route('curso.show',$curso->id) }}">Visualizar</a>
     
-                    <a class="btn btn-primary" href="{{ route('aluno.edit',$aluno->id) }}">Editar</a>
+                    <a class="btn btn-primary" href="{{ route('curso.edit',$curso->id) }}">Editar</a>
    
                     @csrf
                     @method('DELETE')

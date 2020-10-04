@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Curso extends Model
 {
-    use HasFactory;
+	use HasFactory;
+	
+	
+	
+	
 
 	 public function alunos()
 	 {
