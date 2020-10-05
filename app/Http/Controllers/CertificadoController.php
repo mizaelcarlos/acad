@@ -9,22 +9,6 @@ use App\Customer;
 
 class CertificadoController extends Controller
 {
-    public function getDatabaseConfig()
-    {
-        return [
-            'driver'   => 'pgsql',
-            'host'     => 'localhost',
-            'port'     => '5432',
-            'username' => 'postgres',
-            'password' => 'postgres',
-            'database' => 'acad',
-            'jdbc_dir' => base_path() . env('JDBC_DIR', '/vendor/lavela/phpjasper/src/JasperStarter/jdbc'),
-            'jdbc_driver' => 'org.postgresql.Driver',
-            'jdbc_url' => 'jdbc:postgresql://localhost:5432/acad',
-
-        ];
-            
-    }
 
     public function emitir($id_aluno)
     {
@@ -41,7 +25,7 @@ class CertificadoController extends Controller
                 'username' => 'postgres',
                 'password' => 'postgres',
                 'host' => 'localhost',
-                'database' => 'acad',
+                'database' => 'Acad',
                 'port' => '5432'
             ]
         ];

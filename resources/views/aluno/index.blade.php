@@ -30,9 +30,9 @@
             <td>
                 <form action="{{ route('aluno.destroy',$aluno->id) }}" method="POST">
    
-                    <a class="btn btn-info" href="{{ route('aluno.show',$aluno->id) }}" target="_blank">Visualizar</a>
+                    <a class="btn btn-info" href="{{ route('aluno.show',$aluno->id) }}" >Visualizar</a>
     
-                    <a class="btn btn-primary" href="{{ route('aluno.edit',$aluno->id) }}" target="_blank">Editar</a>
+                    <a class="btn btn-primary" href="{{ route('aluno.edit',$aluno->id) }}" >Editar</a>
 
                     <a class="btn btn-primary" href="{{ route('emitir',$aluno->id) }}" target="_blank">Emitir certificado</a>
    

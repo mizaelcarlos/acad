@@ -46,7 +46,7 @@
 
     <div class="pull-left">
         <a class="btn btn-success" href="{{ route('curso.create') }}"> Cadastrar</a>
-    div>
+    </div>
   
       
 @endsection
