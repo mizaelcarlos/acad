@@ -1,1 +1,1 @@
-Projeto baseado em control acadêmico com cruds simples
+Projeto baseado em sistema de controle acadêmico com cruds simples
