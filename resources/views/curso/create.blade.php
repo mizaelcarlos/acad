@@ -20,8 +20,7 @@
     </div>
 @endif
    
-
-<div class="panel panel-primary">Cursos</div>    
+ 
     <form action="{{ route('curso.store') }}" method="POST">
         @csrf
         
@@ -38,7 +37,7 @@
                     <input name="carga_horaria" type="text" id="carga_horaria" class="form-control" placeholder="Carga horária, somente números">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12">
                     <button type="submit" class="btn btn-primary">Salvar</button>
             </div>
         </div>

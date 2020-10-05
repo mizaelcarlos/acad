@@ -14,8 +14,8 @@ class CertificadoController extends Controller
     {
         $nome_arquivo =  'certificado'  . time();
        
-        $input = base_path() . '/certificados/certificado_acad.jasper';   
-        $output = base_path('/public/reports/'.$nome_arquivo); 
+        $entrada = base_path() . '/certificados/certificado_acad.jasper';   
+        $saida = base_path('/public/reports/'.$nome_arquivo); 
         $options = [
             'format' => ['pdf'],
             'locale' => 'en',
@@ -30,18 +30,18 @@ class CertificadoController extends Controller
             ]
         ];
                 
-               $report = new PHPJasper;
+               $certificado = new PHPJasper;
                
-               $report->compile(storage_path('app/public'). '/reports/modelos/certificado_acad.jrxml')->execute();
+               $certificado->compile(storage_path('app/public'). '/reports/modelos/certificado_acad.jrxml')->execute();
 
 
-               $report->process(
+               $certificado->process(
                 storage_path('app/public/reports/modelos/certificado_acad.jasper') ,
-                $output,
+                $saida,
                 $options
                )->execute();
                 
-               $arquivo = $output . '.pdf';
+               $arquivo = $saida . '.pdf';
                $path = $arquivo;
             
                if (!file_exists($arquivo)) {

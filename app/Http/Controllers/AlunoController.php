@@ -16,7 +16,7 @@ class AlunoController extends Controller
      */
     public function index()
     {
-        //
+        
         $alunos = DB::table('alunos')
             ->join('aluno_curso', 'alunos.id', '=', 'aluno_curso.aluno_id')
             ->join('cursos', 'cursos.id', '=', 'aluno_curso.curso_id')
@@ -31,11 +31,7 @@ class AlunoController extends Controller
             ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function create()
     {
         //
@@ -50,12 +46,7 @@ class AlunoController extends Controller
 
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
         //
@@ -74,15 +65,9 @@ class AlunoController extends Controller
                         ->with('success','Aluno cadastrado com sucesso.');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function show($id)
     {
-        //
         $aluno = Aluno::find($id);
         $curso = DB::table('cursos')
         ->select('cursos.nome as nome')
@@ -98,12 +83,7 @@ class AlunoController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function edit($id)
     {
         //
@@ -119,16 +99,10 @@ class AlunoController extends Controller
     }
 
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, $id)
     {
-        //
+        
         $aluno = DB::table('alunos')
               ->where('id', $id)
               ->update(['nome' => $request->nome]);
@@ -147,15 +121,10 @@ class AlunoController extends Controller
     }
     
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function destroy($id)
     {
-        //
+        
         $aluno = Aluno::find($id);
         $aluno->delete();
   

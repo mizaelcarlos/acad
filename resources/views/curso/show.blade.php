@@ -15,6 +15,7 @@
                                         <th>ID</th><td>{{ $curso->id }}</td>
                                     </tr>
                                     <tr><th> Nome </th><td> {{ $curso->nome }} </td></tr>
+									<tr><th> Carga horária </th><td> {{ $curso->carga_horaria }} </td></tr>
                                 </tbody>
                             </table>
                         </div>
