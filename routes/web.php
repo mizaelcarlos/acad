@@ -17,6 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('aluno', 'AlunoController');
-Route::resource('curso', 'CursoController');
-Route::get('certificado/emitir/{aluno_id}', 'CertificadoController@Emitir')->name('emitir');
+Route::resource('aluno', 'aluno\AlunoController');
+Route::resource('curso', 'curso\CursoController');
+Route::get('certificado/emitir/{aluno_id}', 'certificado\CertificadoController@Emitir')->name('emitir');
+
+Route::group(array('prefix' => 'api'), function()
+{
+
+  Route::get('/api', function () {
+      return response()->json(['message' => 'API', 'status' => 'Connected']);;
+  });
+
+  Route::resource('api_curso', 'api\CursoController');
+});
