@@ -21,7 +21,7 @@
 @endif
    
  
-    <form action="{{ route('curso.store') }}" method="POST">
+    <form action="{{ route('curso.store') }}" method="POST" name="formulario" id="formulario">
         @csrf
         
         <div class="row">
@@ -37,10 +37,55 @@
                     <input name="carga_horaria" type="text" id="carga_horaria" class="form-control" placeholder="Carga horária, somente números">
                 </div>
             </div>
+            
             <div class="col-xs-12 col-sm-12 col-md-12">
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+                <div class="form-group">
+                    <strong>Lembrar:</strong>
+                    <?php for($i=0;$i<=5;$i++){ 
+                        echo 'teste';?>
+                    <input class="form-check-input" type="checkbox" name="selecionados[]"  id="selecionados" >
+                    <?php } ?>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                    <button type="button" class="btn btn-primary" onclick="validarForm()">Salvar</button>
             </div>
         </div>
     
     </form>
+
+
+<script>
+function validarForm(){
+    var checkBoxes = document.querySelectorAll("#selecionados");
+    var selecionados = 0;
+    checkBoxes.forEach(function(el) {
+        
+    if(el.checked) {
+        selecionados++;
+    }
+    
+    });
+    
+    var checkbox = document.querySelector("#selecionados");
+    var nome = document.getElementById("nome").value;
+    if (nome == ""){
+        
+        alert("Digite um nome");
+        document.getElementById("nome").focus();
+        return;
+    }
+    else if(selecionados == 0){
+        alert("Clique em lembrar");
+        return;
+    }
+    else{
+        document.getElementById("formulario").submit();
+        return;
+    }
+
+}
+</script>
+
 @endsection
