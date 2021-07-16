@@ -47,7 +47,12 @@
                     <?php } ?>
                 </div>
             </div>
-            
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Data inicio:</strong>
+                    <input class="form-control" name="data_inicio" type="date" id="data_inicio"  >
+                </div>
+            </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                     <button type="button" class="btn btn-primary" onclick="validarForm()">Salvar</button>
             </div>
@@ -57,6 +62,17 @@
 
 
 <script>
+var data_hoje = new Date();
+var data_7_dias_atras = new Date();
+data_7_dias_atras.setDate(data_hoje.getDate()-7);
+
+var dd7 = ("0" + (data_7_dias_atras.getDate())).slice(-2); //pega os dois ultimos elementos do array, se for 017 vair pegar 17
+var mm7 = ("0" + (data_7_dias_atras.getMonth() +　1)).slice(-2);
+var yyyy7 = data_7_dias_atras.getFullYear();
+
+data_sete_dias_atras = yyyy7 + '-' + mm7 + '-' + dd7 ;
+document.getElementById('data_inicio').value = data_sete_dias_atras;
+
 function validarForm(){
     var checkBoxes = document.querySelectorAll("#selecionados");
     var selecionados = 0;
